@@ -1,0 +1,66 @@
+<html>
+    
+    <head>
+        
+        
+        
+    </head>
+    <body onload="paintBoardAndPieces()">
+        
+        <link rel="stylesheet" href="main.css">
+        
+        <img id="queenWhite" src="queen.png" style="display: none;">
+        <img id="kingWhite" src="king.png" style="display: none;">
+        <img id="rookWhite" src="rook.png" style="display: none;">
+        <img id="bishopWhite" src="bishop.png" style="display: none;">
+        <img id="knightWhite" src="knight.png" style="display: none;">
+        <img id="pawnWhite" src="pawn.png" style="display: none;">
+        <img id="queenBlack" src="queenBlack.png" style="display: none;">
+        <img id="kingBlack" src="kingBlack.png" style="display: none;">
+        <img id="rookBlack" src="rookBlack.png" style="display: none;">
+        <img id="bishopBlack" src="bishopBlack.png" style="display: none">
+        <img id="knightBlack" src="knightBlack.png" style="display: none;">
+        <img id="pawnBlack" src="pawnBlack.png" style="display: none;">
+        
+        <canvas id="myCanvas" width="600" height="600" onmousedown="clickPiece(event);"></canvas>
+        
+        <script>
+        
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            
+            var board = [
+                [0, 1, 0, 1, 0, 1, 0, 1],
+                [1, 0, 1, 0, 1, 0, 1, 0],
+                [0, 1, 0, 1, 0, 1, 0, 1],
+                [1, 0, 1, 0, 1, 0, 1, 0],
+                [0, 1, 0, 1, 0, 1, 0, 1],
+                [1, 0, 1, 0, 1, 0, 1, 0],
+                [0, 1, 0, 1, 0, 1, 0, 1],
+                [1, 0, 1, 0, 1, 0, 1, 0]
+            ];
+            
+            var queenWhiteIMG = document.getElementById("queenWhite");
+            var kingWhiteIMG = document.getElementById("kingWhite");
+            var rookWhiteIMG = document.getElementById("rookWhite");
+            var bishopWhiteIMG = document.getElementById("bishopWhite");
+            var knightWhiteIMG = document.getElementById("knightWhite");
+            var pawnWhiteIMG = document.getElementById("pawnWhite");
+            
+            var queenBlackIMG = document.getElementById("queenBlack");
+            var kingBlackIMG = document.getElementById("kingBlack");
+            var rookBlackIMG = document.getElementById("rookBlack");
+            var bishopBlackIMG = document.getElementById("bishopBlack");
+            var knightBlackIMG = document.getElementById("knightBlack");
+            var pawnBlackIMG = document.getElementById("pawnBlack");
+            
+            var tryck = 0;
+            var j;
+        
+        </script>
+        
+        <script src="spel.js"></script>
+        
+    </body>
+    
+</html>
